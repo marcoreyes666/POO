@@ -16,14 +16,12 @@ namespace Duracion
             Segundos = s;
         }    
 
-        public void print ()
+        public void print()
         {
             Console.WriteLine(Horas + ":" + Minutos + ":" + Segundos);
         }
 
     }
-
-    
 
     class Program
     {
