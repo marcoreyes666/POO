@@ -1,1 +1,41 @@
+using System;
+using System.Collections.Generic;
 
+namespace Duracion
+{
+    class Duracion
+    {
+        private int Horas;
+        private int Minutos;
+        private int Segundos;
+        
+        public Duracion(int h, int m, int s)
+        {
+            Horas = h;
+            Minutos = m;
+            Segundos = s;
+        }    
+
+        public void print ()
+        {
+            Console.WriteLine(Horas + ":" + Minutos + ":" + Segundos);
+        }
+
+    }
+
+    
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Duracion Pelicula = new Duracion(1, 45, 00);
+            Duracion Cancion = new Duracion(0, 02, 15);
+            Duracion Partido_Futbol = new Duracion(2, 00, 15);
+
+            Pelicula.print();
+            Cancion.print();
+            Partido_Futbol.print();
+        }
+    }
+}
